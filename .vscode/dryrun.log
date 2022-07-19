@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/antonin/Documents/C++/JeuxSDL/Engine'
-make: Leaving directory '/home/antonin/Documents/C++/JeuxSDL/Engine'
+make: Entering directory '/home/antonin/Documents/C++/JeuxSDL/AGEngine'
+make: Leaving directory '/home/antonin/Documents/C++/JeuxSDL/AGEngine'
  
 make: *** No targets specified and no makefile found.  Stop.
 

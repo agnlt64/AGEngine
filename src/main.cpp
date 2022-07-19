@@ -32,5 +32,5 @@ int main(int argc, char* argv[])
 
     engine->clean();
 
-    return -1;
+    return 0;
 }

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 18 13:38:00 2022
+# Make data base, printed on Tue Jul 19 15:34:53 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/antonin/Documents/C++/JeuxSDL/Engine
+PWD = /home/antonin/Documents/C++/JeuxSDL/AGEngine
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -67,7 +67,7 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/antonin/Documents/C++/JeuxSDL/Engine
+CURDIR := /home/antonin/Documents/C++/JeuxSDL/AGEngine
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
@@ -155,6 +155,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
 # environment
+ 
 XDG_CURRENT_DESKTOP = Unity
 # environment
 LS_COLORS = 
@@ -253,9 +254,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 64769, inode 43386807): 9 files, no impossibilities.
+# . (device 64769, inode 43386807): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,7 +282,6 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -306,12 +306,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 156 B / avg = 9 B
-# current buf: size = 8162 B / used = 156 B / count = 17 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 147 B / avg = 8 B
+# current buf: size = 8162 B / used = 147 B / count = 18 / avg = 8 B
 
-# strcache performance: lookups = 20 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Mon Jul 18 13:38:00 2022
+ 
+# Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
+# Finished Make data base on Tue Jul 19 15:34:53 2022
 
  

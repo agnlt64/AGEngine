@@ -168,9 +168,10 @@ void Engine::clean()
 #
 # Builtins components
 `PositionComponent`
-## Coming soon
 `KeyboardComponent` to move the sprite   
 `SpriteComponent` to attach a sprite to an entity  
+## Coming soon
+Documentation for `Keyboard` and `Sprite` components.  
 `TileComponent` to manage tiles  
 And better map management.
 

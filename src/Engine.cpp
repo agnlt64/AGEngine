@@ -1,16 +1,16 @@
 #include "../headers/Engine.hpp"
 #include "../headers/TextureManager.hpp"
-#include "../headers/GameObject.hpp"
 #include "../headers/Map.hpp"
 #include "../headers/Components.hpp"
+#include "../headers/Vector2D.hpp"
 
-GameObject* player;
 Map* map;
 
 SDL_Renderer* Engine::renderer = nullptr;
+SDL_Event Engine::event;
 
 Manager manager;
-auto& newPlayer(manager.addEntity());
+auto& player(manager.addEntity());
 
 Engine::Engine()
 {}
@@ -43,10 +43,11 @@ void Engine::init(const char* title, int xpos, int ypos, int width, int height, 
         isRunning = false;
     }
 
-    player = new GameObject("../assets/player.png", 0, 0);
     map = new Map();
     
-    newPlayer.addComponent<PositionComponent>();
+    player.addComponent<TransformComponent>();
+    player.addComponent<Keyboard>();
+    player.addComponent<SpriteComponent>("../assets/player.png");
 
 }
 
@@ -54,13 +55,12 @@ void Engine::render()
 {
     SDL_RenderClear(renderer);
     map->drawMap();
-    player->render();
+    manager.draw();
     SDL_RenderPresent(renderer);
 }
 
 void Engine::handleEvents()
 {
-    SDL_Event event;
     SDL_PollEvent(&event);
 
     switch (event.type)
@@ -76,14 +76,13 @@ void Engine::handleEvents()
 
 void Engine::update()
 {
-    player->update();
+    manager.refresh();
     manager.update();
 }
 
 void Engine::clean()
 {
     delete map;
-    delete player;
     SDL_DestroyWindow(window);
     SDL_DestroyRenderer(renderer);
     SDL_Quit();
